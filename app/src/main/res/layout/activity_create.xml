@@ -58,7 +58,7 @@
         android:drawablePadding="16dp"
         android:hint="Genre"
         android:padding="8dp"
-        android:inputType="textPassword"
+        android:inputType="text"
         android:textColor="@color/navy"
         android:textColorHighlight="@color/cardview_dark_background" />
 
@@ -74,7 +74,7 @@
         android:drawablePadding="16dp"
         android:hint="Rating (1-5)"
         android:padding="8dp"
-        android:inputType="textPassword"
+        android:inputType="number"
         android:textColor="@color/navy"
         android:textColorHighlight="@color/cardview_dark_background" />
 
@@ -90,7 +90,7 @@
         android:drawablePadding="16dp"
         android:hint="Deskripsi"
         android:padding="8dp"
-        android:inputType="textPassword"
+        android:inputType="text"
         android:textColor="@color/navy"
         android:textColorHighlight="@color/cardview_dark_background" />
 
@@ -119,6 +119,6 @@
         android:textSize="18sp"
         android:layout_marginTop="40dp"
         android:backgroundTint="@color/teal"
-        app:cornerRadius="10dp"/>
+        app:cornerRadius="30dp"/>
 
 </LinearLayout>
