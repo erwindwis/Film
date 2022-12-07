@@ -18,41 +18,48 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     FloatingActionButton addButton;
     TextView petualangan, keluarga, misteri, fantasi, romantis, animasi, aksi, horor, drama, komedi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ArrayList<TextView> wrapperButton = new ArrayList<>();
         setContentView(R.layout.activity_main);
         addButton = findViewById(R.id.addButton);
         petualangan = findViewById(R.id.petualangan);
-        wrapperButton.add(petualangan);
+        petualangan.setOnClickListener(this::onClick);
         keluarga = findViewById(R.id.keluarga);
-        wrapperButton.add(keluarga);
+        keluarga.setOnClickListener(this::onClick);
         misteri = findViewById(R.id.misteri);
-        wrapperButton.add(misteri);
+        misteri.setOnClickListener(this::onClick);
         fantasi = findViewById(R.id.fantasi);
-        wrapperButton.add(fantasi);
+        fantasi.setOnClickListener(this::onClick);
         romantis = findViewById(R.id.romantis);
-        wrapperButton.add(romantis);
+        romantis.setOnClickListener(this::onClick);
         animasi = findViewById(R.id.animasi);
-        wrapperButton.add(animasi);
+        animasi.setOnClickListener(this::onClick);
         aksi = findViewById(R.id.aksi);
-        wrapperButton.add(aksi);
+        aksi.setOnClickListener(this::onClick);
         horor = findViewById(R.id.horor);
-        wrapperButton.add(horor);
+        horor.setOnClickListener(this::onClick);
         drama = findViewById(R.id.drama);
-        wrapperButton.add(drama);
+        drama.setOnClickListener(this::onClick);
         komedi = findViewById(R.id.komedi);
-        wrapperButton.add(komedi);
+        komedi.setOnClickListener(this::onClick);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, CreateActivity.class);
+                startActivity(i);
             }
         });
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent i = new Intent(getBaseContext(), Category.class);
+        i.putExtra("genre", v.getResources().getResourceEntryName(v.getId()));
+        startActivity(i);
     }
 }
