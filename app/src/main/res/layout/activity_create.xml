@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
+    android:scrollbars="vertical"
     tools:context=".CreateActivity">
 
     <TextView
@@ -43,8 +44,8 @@
         android:hint="Judul"
         android:padding="16dp"
         android:textColor="@color/navy"
-        android:textColorHighlight="@color/cardview_dark_background"
-        android:inputType="textEmailAddress" />
+        android:textColorHighlight="@color/mint"
+        android:inputType="textCapWords" />
 
     <EditText
         android:layout_width="match_parent"
@@ -59,7 +60,7 @@
         android:padding="16dp"
         android:inputType="text"
         android:textColor="@color/navy"
-        android:textColorHighlight="@color/cardview_dark_background" />
+        android:textColorHighlight="@color/mint" />
 
     <EditText
         android:layout_width="match_parent"
@@ -74,11 +75,11 @@
         android:padding="16dp"
         android:inputType="number"
         android:textColor="@color/navy"
-        android:textColorHighlight="@color/cardview_dark_background" />
+        android:textColorHighlight="@color/mint" />
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginBottom="30dp"
         android:layout_marginEnd="30dp"
@@ -87,9 +88,10 @@
         android:drawablePadding="16dp"
         android:hint="Deskripsi"
         android:padding="16dp"
-        android:inputType="text"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
         android:textColor="@color/navy"
-        android:textColorHighlight="@color/cardview_dark_background" />
+        android:textColorHighlight="@color/mint" />
 
     <Button
         android:layout_width="wrap_content"
