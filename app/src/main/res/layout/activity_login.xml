@@ -58,7 +58,7 @@
                 android:hint="Email"
                 android:padding="8dp"
                 android:textColor="@color/navy"
-                android:textColorHighlight="@color/cardview_dark_background"
+                android:textColorHighlight="@color/mint"
                 android:inputType="textEmailAddress"
                 android:layout_marginTop="40dp"/>
 
@@ -74,7 +74,7 @@
                 android:padding="8dp"
                 android:inputType="textPassword"
                 android:textColor="@color/navy"
-                android:textColorHighlight="@color/cardview_dark_background"
+                android:textColorHighlight="@color/mint"
                 android:layout_marginTop="20dp"/>
 
             <Button
