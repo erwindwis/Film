@@ -69,7 +69,6 @@
                 android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/ic_baseline_lock_24"
                 android:drawableRight="@drawable/ic_baseline_visibility_off_24"
-                android:longClickable="false"
                 android:drawablePadding="16dp"
                 android:hint="Password"
                 android:padding="8dp"
