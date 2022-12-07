@@ -51,7 +51,9 @@ public class MovieDesc extends AppCompatActivity {
                             public void onComplete(@NonNull Task<Void> task) {
                                 Toast.makeText(getBaseContext(), "Edit Success", Toast.LENGTH_SHORT).show();
                                 Intent i = new Intent(getBaseContext(), MainActivity.class);
+                                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                 startActivity(i);
+                                finish();
                             }
                         });
                     }
