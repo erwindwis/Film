@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "266381472188",
+    "project_id": "projectpapb-film",
+    "storage_bucket": "projectpapb-film.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266381472188:android:7ea9d66a67d706371dbbb9",
+        "android_client_info": {
+          "package_name": "com.example.film"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266381472188-s7koop2kvgtrpsacf5ltqentv3j851g9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.film",
+            "certificate_hash": "a3b6310ff577248a7e203f5bf7d815dfa56f2ea6"
+          }
+        },
+        {
+          "client_id": "266381472188-fdubfsmadhovi0q54b1sc1g12in9grdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEx3y-sso9iNpXxo9h52P4_iimiErlM4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266381472188-fdubfsmadhovi0q54b1sc1g12in9grdb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
