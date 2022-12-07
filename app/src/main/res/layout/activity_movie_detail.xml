@@ -21,8 +21,7 @@
             android:id="@+id/image"
             android:layout_width="320dp"
             android:layout_height="320dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/ic_baseline_image_48" />
+            android:layout_gravity="center_horizontal" />
 
         <TextView
             android:id="@+id/tvJudul"
@@ -69,17 +68,17 @@
             android:fontFamily="@font/poppins"
             android:text="Description"
             android:textColor="@color/navy"
-            android:textSize="24sp" />
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/editButton"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:layout_margin="32dp"
             android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="32dp"
             android:backgroundTint="@color/aqua"
             android:text="Edit Description"
-            android:textSize="20sp"
+            android:textSize="17sp"
             android:textStyle="bold"
             app:cornerRadius="10dp"
             app:icon="@drawable/ic_baseline_edit_24" />

@@ -4,17 +4,22 @@ import java.util.List;
 
 public class Categories {
     String categories;
-    List<Film> filmList;
-    Categories(){}
-    public List<Film> getFilmList() {
-        return filmList;
-    }
+    List<String> films;
+    public Categories(){}
 
     public String getCategories() {
         return categories;
     }
 
-    public void setFilmList(List<Film> filmList) {
-        this.filmList = filmList;
+    public void setCategories(String categories) {
+        this.categories = categories;
+    }
+
+    public List<String> getFilms() {
+        return films;
+    }
+
+    public void setFilms(List<String> films) {
+        this.films = films;
     }
 }
