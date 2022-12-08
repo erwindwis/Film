@@ -63,7 +63,7 @@ public class CreateActivity extends AppCompatActivity {
                         storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
                             public void onSuccess(Uri uri) {
-                                Toast.makeText(getBaseContext(), "Succes upload image", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getBaseContext(), "Success upload image", Toast.LENGTH_SHORT).show();
                                 Film film = new Film(title.getText().toString(), desc.getText().toString(),uri.toString(), rating.getText().toString());
                                 db.collection("film").add(film).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                     @Override
